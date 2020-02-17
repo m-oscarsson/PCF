@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="MKOS.PCF" constructor="TreeGrid" version="0.0.97" display-name-key="TreeGrid" description-key="Displays a heirarchical grid as a tree" control-type="standard">
+    <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
+    <data-set name="tableGrid" display-name-key="Table Grid" />
+    <property name="treeEntityName" display-name-key="Tree Entity Name" description-key="Tree Entity Name" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="treeNodeParentAttribute" display-name-key="Tree Parent Lookup Attribute" description-key="Parent Attribute Field Name" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="treeNodeRootAttribute" display-name-key="Tree Root Attribute" description-key="Root Attribute Field Name" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="treeNodeNameAttribute" display-name-key="Tree Node Name Attribute" description-key="Tree Node Name Attribute" of-type="SingleLine.Text" usage="input" required="false" />
+    <!-- <property name="nodeIdAttribute" display-name-key="Tree Node ID Attribute" description-key="Tree Node ID Attribute" of-type="SingleLine.Text" usage="input" required="false" /> -->
+    <!-- <property name="relationshipName" display-name-key="Relationship Name" description-key="Relationship Name" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="relationshipEntity" display-name-key="Relationship Entity" description-key="Relationship Entity" of-type="SingleLine.Text" usage="input" required="false" /> -->
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="scripts/jstree.style.min.css" order="2" />
+      <img path="resources/40px.png" />
+      <img path="resources/32px.png" />
+      <img path="resources/throbber.gif" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+      <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+    -->
+    </feature-usage>
+  </control>
+</manifest>
