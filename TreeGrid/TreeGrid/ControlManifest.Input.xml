@@ -12,7 +12,7 @@
     <property name="relationshipEntity" display-name-key="Relationship Entity" description-key="Relationship Entity" of-type="SingleLine.Text" usage="input" required="false" /> -->
     <resources>
       <code path="index.ts" order="1" />
-      <css path="scripts/jstree.style.min.css" order="2" />
+      <css path="resources/jstree.style.min.css" order="2" />
       <img path="resources/40px.png" />
       <img path="resources/32px.png" />
       <img path="resources/throbber.gif" />
